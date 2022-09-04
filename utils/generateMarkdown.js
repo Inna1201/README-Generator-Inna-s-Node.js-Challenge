@@ -7,24 +7,19 @@ function renderLicenseBadge(license) {
     return '[![License](https://img.shields.io/badge/License-GPL%203.0-yellowgreen)](https://opensource.org/licenses/GPL-3.0)'
   } else if (license === 'MIT') {
     return '[![License](https://img.shields.io/badge/License-MIT-yellowgreen)](https://opensource.org/licenses/MIT)'
-  } else if (license === 'MIT') {
+  } else if (license === 'BSD 3') {
     return '[![License](https://img.shields.io/badge/License-BSD%203-yellowgreen)](https://opensource.org/licenses/BSD-3-Clause)'
   } else {
     return "";
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
- 
-};
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license ==! 'None'){
-    return `This project is licensed under the ${data.license} license`;
+  if (license !== 'None'){
+    return `### License
+This project is licensed under the ${license} license`;
   } else {
     return "";
   }
@@ -45,27 +40,33 @@ ${renderLicenseBadge(data.license)}
 - [Questions](#questions)
 
 
-### Description 
+## Description 
 ${data.description}
 
-### Instalation
+
+## Instalation
+To install necessary dependencies, run the following command:
 ${data.install}
 
-### Usage
+
+## Usage
 ${data.usage}
 
-### License
+
 ${renderLicenseSection(data.license)} 
 
-### Contributing
+
+## Contributing
 ${data.contributing}
 
-### Tests
+
+## Tests
+To run tests, run the following command:
 ${data.tests}
 
-### Questions
-If you have a questions please contact me via
-*GitHub: ${data.username}
+
+## Questions
+If you have a questions please contact me via email: ${data.email} or visit my gitHub page: https://github.com/${data.username}
 `;
 }
 
