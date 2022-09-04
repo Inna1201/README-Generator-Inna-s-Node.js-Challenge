@@ -21,7 +21,7 @@ function renderLicenseBadge(license) {
 function renderLicenseSection(license) {
   if (license !== 'None'){
     return `### License
-This project is licensed under the ${license} license`;
+This project is licensed under the ${license} license.`;
   } else {
     return "";
   }
@@ -68,7 +68,7 @@ ${data.tests}
 
 
 ## Questions
-If you have a questions please contact me via email: ${data.email} or visit my gitHub page: https://github.com/${data.username}
+If you have a questions please contact me via email: ${data.email}, or visit my gitHub page: https://github.com/${data.username}.
 `;
 }
 
