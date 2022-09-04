@@ -5,7 +5,7 @@ In this challenge I have created a Professional README.md Generator.
 
 
 # Project requirements
-Create a command-line application that generates a README file by using the Inquirer package.
+Create a command-line application that generates a README file from a user's input using the Inquirer package.
 
 
 
